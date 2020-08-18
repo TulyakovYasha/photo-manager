@@ -20,8 +20,14 @@ public class PhotoEndpoint implements PhotoApi {
 
     @Override
     public ResponseEntity<Void> getPhoto(String page, String token) {
-         photoService.getPhoto(page, token);
-         return new ResponseEntity<Void>(HttpStatus.OK);
+         photoService.savePhoto(page, token);
+         return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<Void> getPhotoInfo(String id, String token) {
+        photoService.savePhotoInfo(id, token);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
 }

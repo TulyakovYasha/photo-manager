@@ -3,8 +3,10 @@ package photo.manager.server.util;
 import photo.manager.api.dto.Photo;
 import photo.manager.api.dto.Picture;
 import photo.manager.server.dto.PhotoDto;
+import photo.manager.server.dto.PhotoInfoDto;
 import photo.manager.server.dto.PictureDto;
 import photo.manager.server.entity.PhotoEntity;
+import photo.manager.server.entity.PhotoInfoEntity;
 import photo.manager.server.entity.PictureEntity;
 
 import java.util.stream.Collectors;
@@ -41,5 +43,16 @@ public class Mapper {
         pictureEntity.setExternalId(pictureDto.getId());
         pictureEntity.setCropped_picture(pictureDto.getCropped_picture());
         return pictureEntity;
+    }
+
+    public static PhotoInfoEntity mapPhotoInfoDtoToPhotoInfoEntity(PhotoInfoDto allPhotoInfo) {
+        PhotoInfoEntity photoInfoEntity = new PhotoInfoEntity();
+        photoInfoEntity.setAuthor(allPhotoInfo.getAuthor());
+        photoInfoEntity.setCamera(allPhotoInfo.getCamera());
+        photoInfoEntity.setCropped_picture(allPhotoInfo.getCropped_picture());
+        photoInfoEntity.setFull_picture(allPhotoInfo.getFull_picture());
+        photoInfoEntity.setExternalId(allPhotoInfo.getId());
+        photoInfoEntity.setTags(allPhotoInfo.getTags());
+        return photoInfoEntity;
     }
 }
