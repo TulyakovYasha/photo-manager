@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import photo.manager.api.dto.AllInfo;
 
 
 @SwaggerDefinition(info = @Info(version = "1.0.0", title = "The Photo API."), produces = {"application/json"},
@@ -24,5 +25,6 @@ public interface PhotoApi {
     @RequestMapping(path = "/images/{id}", method = RequestMethod.GET)
     ResponseEntity<Void> getPhotoInfo(@PathVariable(name = "id") String id, @RequestHeader(name = "Authorization") String token);
 
-
+    @RequestMapping(path = "/search/getall", method = RequestMethod.GET)
+    AllInfo getAllInfo();
 }

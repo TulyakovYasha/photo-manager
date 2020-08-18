@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 import photo.manager.api.PhotoApi;
+import photo.manager.api.dto.AllInfo;
 import photo.manager.server.service.PhotoService;
 
 
@@ -28,6 +29,11 @@ public class PhotoEndpoint implements PhotoApi {
     public ResponseEntity<Void> getPhotoInfo(String id, String token) {
         photoService.savePhotoInfo(id, token);
         return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @Override
+    public AllInfo getAllInfo() {
+        return photoService.getAllInfo();
     }
 
 }

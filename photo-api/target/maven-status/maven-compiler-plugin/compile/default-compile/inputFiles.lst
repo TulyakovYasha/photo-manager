@@ -1,2 +1,5 @@
 /home/yasha/projects/photo-manager/photo-api/src/main/java/photo/manager/api/dto/Photo.java
+/home/yasha/projects/photo-manager/photo-api/src/main/java/photo/manager/api/dto/Picture.java
 /home/yasha/projects/photo-manager/photo-api/src/main/java/photo/manager/api/PhotoApi.java
+/home/yasha/projects/photo-manager/photo-api/src/main/java/photo/manager/api/dto/AllInfo.java
+/home/yasha/projects/photo-manager/photo-api/src/main/java/photo/manager/api/dto/PhotoInfo.java

@@ -1,2 +1,5 @@
+photo/manager/api/dto/Picture.class
+photo/manager/api/dto/PhotoInfo.class
 photo/manager/api/PhotoApi.class
+photo/manager/api/dto/AllInfo.class
 photo/manager/api/dto/Photo.class
