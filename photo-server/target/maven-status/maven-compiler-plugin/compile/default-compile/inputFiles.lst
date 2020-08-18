@@ -1,0 +1,8 @@
+/home/yasha/projects/photo-manager/photo-server/src/main/java/photo/manager/server/service/PhotoService.java
+/home/yasha/projects/photo-manager/photo-server/src/main/java/photo/manager/server/config/FeignConfig.java
+/home/yasha/projects/photo-manager/photo-server/src/main/java/photo/manager/server/dto/Picture.java
+/home/yasha/projects/photo-manager/photo-server/src/main/java/photo/manager/server/endpoint/PhotoEndpoint.java
+/home/yasha/projects/photo-manager/photo-server/src/main/java/photo/manager/server/config/AppConfig.java
+/home/yasha/projects/photo-manager/photo-server/src/main/java/photo/manager/server/service/remote/PhotoClient.java
+/home/yasha/projects/photo-manager/photo-server/src/main/java/photo/manager/server/App.java
+/home/yasha/projects/photo-manager/photo-server/src/main/java/photo/manager/server/dto/PhotoDto.java

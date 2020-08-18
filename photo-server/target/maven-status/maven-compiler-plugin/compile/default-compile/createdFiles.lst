@@ -1,0 +1,8 @@
+photo/manager/server/service/remote/PhotoClient.class
+photo/manager/server/endpoint/PhotoEndpoint.class
+photo/manager/server/config/FeignConfig.class
+photo/manager/server/App.class
+photo/manager/server/config/AppConfig.class
+photo/manager/server/service/PhotoService.class
+photo/manager/server/dto/PhotoDto.class
+photo/manager/server/dto/Picture.class
